@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .field {
+
+
+            border: 2px solid rgb(240, 32, 32);
+            width: 1297px;
+            height: 530px;
+            transition: ease-in s;
+
+        }
+
+        .bat {
+
+            transition: transform .3s ease-in;
+            position: relative;
+            left: 134px;
+            top: 35px;
+
+        }
+
+        .field:hover .ball {
+            transform: translate(1100px, -160px) rotate(-5000deg);
+        }
+
+        .field:hover .bat {
+
+            transform: rotate(-27deg);
+            transform-origin: top;
+
+
+
+
+
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            background-image: linear-gradient(red, pink);
+            border-radius: 25px;
+            position: relative;
+            top: -128px;
+            left: 472px;
+            transition: transform 1s ease-out .3s;
+            box-shadow: 1px 1px 10px rgb(92, 87, 87);
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="field">
+        <img class="bat" src="third bart.jpg" alt="">
+        <div class="ball"></div>
+    </div>
+
+</body>
+
+</html>
